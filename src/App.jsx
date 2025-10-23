@@ -365,10 +365,6 @@ const Portfolio = () => {
                   zach.mortenson7@gmail.com
                 </a>
               </div>
-              <div className="flex items-center justify-center gap-3">
-                <span className="text-2xl">📱</span>
-                <span className="text-slate-900">631-905-8111</span>
-              </div>
             </div>
             <div className="flex justify-center gap-4 mt-8">
               <a href="https://www.linkedin.com/in/zachary-mortenson-8923b4152/" 
@@ -392,9 +388,6 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="py-8 px-4 bg-slate-900 text-white text-center">
-        <p className="text-slate-400">
-          © 2025 Zachary Mortenson. Built with React & Tailwind CSS.
-        </p>
       </footer>
     </div>
   );
