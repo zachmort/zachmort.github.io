@@ -226,7 +226,7 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
             Interests & Experience
@@ -240,7 +240,7 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Blog Section */}
       <section id="blog" className="py-16 px-4 sm:px-6 lg:px-8">
