@@ -91,16 +91,16 @@ const Portfolio = () => {
     }
   ];
 
-  const skills = [
-    { name: "Esports Analytics", icon: "🎮" },
-    { name: "Sports Analytics", icon: "🏀" },
-    { name: "Data Mining", icon: "⚡" },
-    { name: "Machine Learning", icon: "💻" }
-  ];
+  // const skills = [
+  //   { name: "Esports Analytics", icon: "🎮" },
+  //   { name: "Sports Analytics", icon: "🏀" },
+  //   { name: "Data Mining", icon: "⚡" },
+  //   { name: "Machine Learning", icon: "💻" }
+  // ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'blog', 'projects', 'contact'];
+      const sections = ['about', 'blog', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -137,7 +137,7 @@ const Portfolio = () => {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['about', 'experience', 'blog', 'projects', 'contact'].map((section) => (
+              {['about', 'blog', 'projects', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -147,7 +147,7 @@ const Portfolio = () => {
                       : 'text-slate-600 hover:text-blue-600'
                   }`}
                 >
-                  {section === 'experience' ? 'Skills' : section}
+                  {section}
                 </button>
               ))}
             </div>
