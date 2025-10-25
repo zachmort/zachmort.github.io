@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown } from 'lucide-react';
+import youtubeimg from './assets/images/banner_youtube.jpg';
+import olympicsimg from './assets/images/olympics.jpg';
+import leagueimg from './assets/images/league-of-legends.jpg';
+import tvfsimg from './assets/images/TVFs.jpg';
+import codeimg from './assets/images/codebanner.jpg';
+import jsonimg from './assets/images/introjsonfunctions.jpg';
+import locilocimg from './assets/images/lociloc.png';
+import tenonelinersimg from './assets/images/10oneliners.png';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,14 +23,14 @@ const Portfolio = () => {
     },
     {
       title: "YouTube Analysis",
-      image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=500&fit=crop",
+      image: youtubeimg,
       description: "A brief analysis of one of my most-watched YouTube channels!",
       tools: "Python, YouTube API",
       link: "https://github.com/zachmort/youtube_analytics"
     },
     {
       title: "League of Legends ML Project",
-      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=500&fit=crop",
+      image: leagueimg,
       description: "Using Logistic Regression to uncover which factors have the highest impact on winning a LoL match.",
       tools: "RStudio",
       link: "https://github.com/zachmort/League-of-Legends-Data-Analysis"
@@ -36,7 +44,7 @@ const Portfolio = () => {
     },
     {
       title: "Olympic Data Analysis",
-      image: "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&h=500&fit=crop",
+      image: olympicsimg,
       description: "Analyzing historical Olympics records by Country, Gender, Year, and more.",
       tools: "RStudio",
       link: "https://github.com/zachmort/Olympics-data-analysis-and-visualization"
@@ -57,14 +65,29 @@ const Portfolio = () => {
       link: "https://medium.com/@zach.mortenson7/getting-started-with-python-270853b620cb"
     },
     {
+      title: "A Guide to BigQuery Table Functions (TVFs)",
+      image: tvfsimg,
+      link: "https://medium.com/@zach.mortenson7/a-guide-to-bigquery-table-functions-tvfs-937889c0ff04"
+    },
+    {
       title: "Logical Processing and Execution of SQL Queries",
       image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=500&fit=crop",
       link: "https://medium.com/@zach.mortenson7/logical-processing-and-execution-of-sql-queries-30be8e815eab"
     },
     {
-      title: "Fundamentals of SQL",
-      image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=500&fit=crop",
-      link: "https://medium.com/@zach.mortenson7/fundamentals-of-sql-37e2d2c22a6a"
+      title: "Introduction to BigQuery JSON Functions",
+      image: jsonimg,
+      link: "https://medium.com/@zach.mortenson7/introduction-to-bigquery-json-functions-7106b9a17780"
+    },
+    {
+      title: "10 Essential Python One-Liners That You'll Actually Use",
+      image: tenonelinersimg,
+      link: "https://medium.com/@zach.mortenson7/10-essential-python-one-liners-that-youll-actually-use-543fd97b3bbc"
+    },
+    {
+      title: "Python Introduction to .loc and .iloc",
+      image: locilocimg,
+      link: "https://medium.com/@zach.mortenson7/python-introduction-to-loc-and-iloc-9160fe374a4b"
     }
   ];
 
@@ -173,10 +196,10 @@ const Portfolio = () => {
                 Hi, I'm Zach
               </h1>
               <p className="text-lg text-slate-600 mb-4">
-                I have a genuine passion for extracting valuable insights from data! With expertise in Data Visualization and Machine Learning, I channel my skills into fascinating subjects that captivate me.
+              Senior BI Engineer • 5+ years turning data into decisions
               </p>
               <p className="text-slate-600 mb-8">
-                I specialize in Esports, Healthcare data, and NBA player data analysis.
+              I build clean, reusable analytics pipelines, automate repetitive workflows with Python, and surface insights that stick—lately across esports, healthcare, and NBA analytics.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <a
@@ -211,9 +234,16 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="relative">
+            <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center text-6xl">
-                📊
+              <img
+              src={codeimg}
+              alt="Data visualization"
+              className="aspect-square w-full rounded-2xl object-cover"
+            />
               </div>
+              <div className="absolute -bottom-4 -right-4 px-6 py-3 bg-white rounded-lg shadow-lg">…quote…</div>
+            </div>
               <div className="absolute -bottom-4 -right-4 px-6 py-3 bg-white rounded-lg shadow-lg">
                 <p className="text-sm text-slate-600">
                   "The world is one big data problem"
@@ -243,7 +273,7 @@ const Portfolio = () => {
       </section> */}
 
       {/* Blog Section */}
-      <section id="blog" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="blog" className="py-9 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Blog</h2>
